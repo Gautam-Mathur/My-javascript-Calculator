@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+#calculator {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: black;
+    color: white; /* Ensuring text color is readable */
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: grey;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    border: none; /* Remove default button border */
+}
+
+.opbtn {
+    background-color: orange !important; /* Apply orange background to opbtn class */
+}
+
+button:focus {
+    outline: none; /* Remove focus outline for buttons */
+}
